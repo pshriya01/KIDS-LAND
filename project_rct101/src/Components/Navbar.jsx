@@ -15,16 +15,14 @@ const Navbar = () => {
         {
             to:'/teachers',label:'Teachers'
         },
-        {
-            to:'/blogs', label:'Blogs'
-        },
+       
         {
           to:'/about' ,label:'About Us'
       },
     ]
 const navigate=useNavigate()
 const handleClick=()=>{
-  navigate("/login")
+  navigate("/signup")
 }
 
   return (
@@ -38,7 +36,7 @@ const handleClick=()=>{
    <TabList >
       {
         links.map((link)=>(
-            <NavLink to={link.to}><Tab fontWeight={"bold"} fontSize={"lg"} marginLeft='150px' mt={'25px'} >{link.label}</Tab></NavLink>
+            <NavLink to={link.to}><Tab fontWeight={"bold"} fontSize={"lg"} marginLeft='200px' mt={'25px'} >{link.label}</Tab></NavLink>
         ))
       }
      

@@ -5,6 +5,8 @@ import AboutUs from "../pages/AboutUs";
 import Courses from "../pages/Courses";
 import Blog from "../pages/Blog";
 import Teachers from "../pages/Teachers";
+import IndividualCourse from "../pages/IndividualCourse";
+import SignUp from "../pages/singup";
 function AllRoutes(){
   return (
     <Routes>
@@ -14,6 +16,8 @@ function AllRoutes(){
         <Route path="/courses" element={<Courses/>} ></Route>
         <Route path="/blogs" element={<Blog/>}></Route>
         <Route path="/teachers" element={<Teachers/>} ></Route>
+        <Route path="/signup" element={<SignUp/>} ></Route>
+        <Route path="/courses/:id" element={<IndividualCourse/>}></Route>
     </Routes>
   )
 }
