@@ -34,7 +34,7 @@ export default function Login(){
         userData.forEach((user) => {
             if (user.email === email && user.password === password) {
                 // foundUser = true
-                Auth.loginUser()
+                Auth.loginUser(user.name)
                 navigate("/")
             }
         });

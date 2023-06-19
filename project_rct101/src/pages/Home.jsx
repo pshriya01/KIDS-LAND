@@ -43,7 +43,7 @@ const Home = () => {
                 </CardBody>
 
                 <CardFooter >
-                   <Button variant='solid' color='white' bg="#304b62" mt='-60px' onClick={handleLogin} >{Auth.isAuth?"Logout":"Login"}
+                   <Button variant='solid' color='white' bg="#304b62" mt='-60px' onClick={handleLogin} >{Auth.isAuth?`Hello ${Auth.user}`:"Login"}
                    </Button>
                    <Button variant='solid' color='white' bg="#304b62" mt='-60px'marginLeft='50px'  >Live Demo</Button>
                 </CardFooter>
